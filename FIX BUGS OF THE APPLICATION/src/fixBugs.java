@@ -94,10 +94,11 @@ public class fixBugs {
             if (integer == intToFind) {
                 System.out.println("Expense Found!");
                 return;
+               
             }
-            System.out.println("Expense not Found :(");
         }
-    }
+            System.out.println("Expense not Found!");
+        }
 //    FOR SORTING THE EXPENDITURES
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         Integer temp = 0;
