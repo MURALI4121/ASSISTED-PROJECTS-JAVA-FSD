@@ -85,7 +85,7 @@ public class fixBugs {
     private static void closeApp() {
         System.out.println("Closing your application... \nThank you!");
             }
-//  FOR SEARCHING THE EXPENDITURES
+      //  FOR SEARCHING THE EXPENDITURES
     private static void searchExpenses(ArrayList<Integer> arrayList) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the expense you need to search:\t");
@@ -99,7 +99,7 @@ public class fixBugs {
         }
             System.out.println("Expense not Found!");
         }
-//    FOR SORTING THE EXPENDITURES
+     //   FOR SORTING THE EXPENDITURES
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         Integer temp = 0;
         for(int i = 0; i < arrayList.size()-1; i++){
