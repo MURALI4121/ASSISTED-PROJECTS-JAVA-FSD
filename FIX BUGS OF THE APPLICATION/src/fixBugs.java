@@ -99,7 +99,7 @@ public class fixBugs {
         }
             System.out.println("Expense not Found!");
         }
-     //   FOR SORTING THE EXPENDITURES
+      //   FOR SORTING THE EXPENDITURES
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         Integer temp = 0;
         for(int i = 0; i < arrayList.size()-1; i++){
