@@ -60,26 +60,7 @@ public class Product extends HttpServlet {
 			int res = st.executeUpdate("insert into pets.products(id,name,color,price)values('"+id_int+"','"+name+"','"+color+"','"+price_cost+"')");
 			ResultSet rs = st.executeQuery("select * from pets.products");
 			
-			ResultSetMetaData md = rs.getMetaData();
-			int col = md.getColumnCount();  
 			
-			out.println("<br/><br/>");
-		//	out.println("<div align='center'>"+"After adding a new product to Database" + "<br>"+"</div>");
-            
-            out.println("<div align='center' style='margin-top:-50%'>"+"<table border=1 width=50% height=50%>");  
-            out.println("<tr><th>Product Id</th><th>Product Name</th><th>Product Color</th><th>Product Price</th><tr>");
-			while (rs.next()) 
-			{
-				out.println("<tr>");
-				for(int i = 1 ; i <= col; i++)
-				{
-					out.print("<td>"+rs.getString(i) +"</td>"); 
-				}
-				out.println("</tr>");
-			  	out.println("<br><br>");
-			}
-			out.println("</table>"+"</div>");  
-            out.println("</html></body>");
             st.close();
 			con.close();
 			
